@@ -1,31 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import {Rating} from "./components/Rating/Rating";
-import {Accordion} from "./components/Accordion/Accordion";
-import {OnOff} from './components/OnOff';
+import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
+import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
+import {OnOff} from './components/OnOff/OnOff';
+import {Rating, ControlledRatingType} from './components/Rating/Rating';
+import {Accordion} from './components/Accordion/Accordion';
+import {UncontrolledOnOff} from './components/OnOff/UncontrolledOnOff';
 
 function App() {
 
+    let [ratingValue,setRatingValue]=useState<ControlledRatingType>(0)
+    let [accordionCollapsed,setAccordionCollapsed]=useState<boolean>(false)
+    let [switchOn,setSwitchOn]=useState<boolean>(false)
+
     return (
-        <div>
+        <div className='app'>
             <AppTitle/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
-            <OnOff />
-            <OnOff />
-            <OnOff />
-            <Accordion title={'Users'}/>
-            <Accordion title={'Menu'}/>
-            {/*<Accordion title={'Menu'} collapsed={true}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
-            <Accordion title={'Users'} collapsed={false}/>*/}
+            <UncontrolledRating />
+            {/*<UncontrolledRating />
+            <UncontrolledRating />
+            <UncontrolledRating />
+            <UncontrolledRating />*/}
+            <Rating value={ratingValue} onClick={setRatingValue}/>
+            <OnOff on={switchOn} onChange={setSwitchOn}/>
+            <UncontrolledOnOff/>
+
+            <UncontrolledAccordion title={'Users'}/>
+            <Accordion title={'Menu'}
+                       collapsed={accordionCollapsed}
+                       setAccordionCollapsed={()=>setAccordionCollapsed(!accordionCollapsed)}/>
+            {/*<UncontrolledAccordion title={'Menu'}/>*/}
+
 
         </div>
     );

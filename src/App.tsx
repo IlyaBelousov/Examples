@@ -7,6 +7,7 @@ import {Rating, ControlledRatingType} from './components/Rating/Rating';
 import {Accordion} from './components/Accordion/Accordion';
 import {UncontrolledOnOff} from './components/OnOff/UncontrolledOnOff';
 import {Select} from './components/Select/Select';
+import {CraftedSelect} from './components/CraftedSelect/CraftedSelect';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
                        setAccordionCollapsed={() => setAccordionCollapsed(!accordionCollapsed)}/>
             {/*<UncontrolledAccordion title={'Menu'}/>*/}
             <Select/>
+            <CraftedSelect/>
 
 
         </div>

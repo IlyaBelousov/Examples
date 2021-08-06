@@ -10,11 +10,15 @@
     border-radius: 5px;
 }
 
-.item:hover {
+
+.item, .selected {
     background-color: rgba(3, 108, 199, 0.71);
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.select, .item {
+.select, .item  {
     box-sizing: border-box;
     height: 30px;
     text-align: center;

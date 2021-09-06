@@ -1,0 +1,128 @@
+.CraftedSelect_selectContainer__3V1zN {
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    font-size: 1.3em;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+.CraftedSelect_item__2vcZ_, .CraftedSelect_selected__Tn0qb {
+    background-color: rgba(3, 108, 199, 0.71);
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.CraftedSelect_select__1eGbi, .CraftedSelect_item__2vcZ_  {
+    box-sizing: border-box;
+    height: 30px;
+    text-align: center;
+    padding: 0 5px 0 5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.Time_timer__u9WzJ {
+    color: #4ef121;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.Time_clock__1QpW- {
+    width: 250px;
+    height: 250px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    background: url(../../static/media/Clock.3834d8b9.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.Time_clock__1QpW-:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50%;
+    z-index: 999;
+}
+.Time_clock__1QpW- .Time_hour__2d_wd,
+.Time_clock__1QpW- .Time_min__2EnDV,
+.Time_clock__1QpW- .Time_sec__3qJUY{
+    position: absolute;
+}
+
+.Time_clock__1QpW- .Time_hour__2d_wd .Time_hr__3r8qg{
+
+    width: 170px;
+    height: 170px;
+}
+.Time_clock__1QpW- .Time_min__2EnDV .Time_mn__28SL3{
+    width: 190px;
+    height: 190px;
+}
+.Time_clock__1QpW- .Time_sec__3qJUY .Time_sc__DCkmI{
+    width: 200px;
+    height: 200px;
+}
+.Time_hr__3r8qg, .Time_mn__28SL3, .Time_sc__DCkmI{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    border-radius: 50%;
+}
+.Time_hr__3r8qg:before{
+    content: '';
+    width: 6px;
+    height: 90px;
+    z-index: 10;
+    border-radius: 7px 7px 0 0 ;
+    background-color: black;
+}
+.Time_mn__28SL3:before{
+    content: '';
+    width: 4px;
+    height: 100px;
+    z-index: 11;
+    border-radius: 7px 7px 0 0 ;
+    background-color: black;
+}
+.Time_sc__DCkmI:before{
+    content: '';
+    width: 2px;
+    height: 145px;
+    z-index: 12;
+    border-radius: 7px 7px 0 0 ;
+    background-color: black;
+}
+
+
+/*# sourceMappingURL=main.c14d21cb.chunk.css.map*/

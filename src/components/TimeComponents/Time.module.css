@@ -1,0 +1,84 @@
+.timer {
+    color: #4ef121;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.clock {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("Clock.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50%;
+    z-index: 999;
+}
+.clock .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+
+.clock .hour .hr{
+
+    width: 170px;
+    height: 170px;
+}
+.clock .min .mn{
+    width: 190px;
+    height: 190px;
+}
+.clock .sec .sc{
+    width: 200px;
+    height: 200px;
+}
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.hr:before{
+    content: '';
+    width: 6px;
+    height: 90px;
+    z-index: 10;
+    border-radius: 7px 7px 0 0 ;
+    background-color: black;
+}
+.mn:before{
+    content: '';
+    width: 4px;
+    height: 100px;
+    z-index: 11;
+    border-radius: 7px 7px 0 0 ;
+    background-color: black;
+}
+.sc:before{
+    content: '';
+    width: 2px;
+    height: 145px;
+    z-index: 12;
+    border-radius: 7px 7px 0 0 ;
+    background-color: black;
+}

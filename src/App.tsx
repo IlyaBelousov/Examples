@@ -8,6 +8,7 @@ import {Accordion} from './components/Accordion/Accordion';
 import {UncontrolledOnOff} from './components/OnOff/UncontrolledOnOff';
 import {Select} from './components/Select/Select';
 import {CraftedSelect} from './components/CraftedSelect/CraftedSelect';
+import {Clock} from './components/TimeComponents/Clock';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
             <CraftedSelect onItemClick={onItemClick}
                            selectedValue={selectedValue}
                            ItemsArray={ItemsArray}/>
+            <Clock/>
         </div>
     );
 }

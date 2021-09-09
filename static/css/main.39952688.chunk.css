@@ -44,7 +44,6 @@
             align-items: center;
 }
 
-
 img {
     width: 50px;
     height: 50px;
@@ -59,7 +58,7 @@ img {
             justify-content: center;
     -webkit-align-items: center;
             align-items: center;
-    background: url(../../static/media/Clock.3834d8b9.png);
+    background: url(../../static/media/Clock.4265cf5d.png);
     background-size: cover;
     border-radius: 50%;
 }
@@ -73,56 +72,63 @@ img {
     border-radius: 50%;
     z-index: 999;
 }
+
 .Time_clock__1QpW- .Time_hour__2d_wd,
 .Time_clock__1QpW- .Time_min__2EnDV,
-.Time_clock__1QpW- .Time_sec__3qJUY{
+.Time_clock__1QpW- .Time_sec__3qJUY {
     position: absolute;
 }
 
-.Time_clock__1QpW- .Time_hour__2d_wd .Time_hr__3r8qg{
+.Time_clock__1QpW- .Time_hour__2d_wd .Time_hr__3r8qg {
 
     width: 170px;
     height: 170px;
 }
-.Time_clock__1QpW- .Time_min__2EnDV .Time_mn__28SL3{
+
+.Time_clock__1QpW- .Time_min__2EnDV .Time_mn__28SL3 {
     width: 190px;
     height: 190px;
 }
-.Time_clock__1QpW- .Time_sec__3qJUY .Time_sc__DCkmI{
-    width: 200px;
-    height: 200px;
+
+.Time_clock__1QpW- .Time_sec__3qJUY .Time_sc__DCkmI {
+    width: 180px;
+    height: 180px;
 }
-.Time_hr__3r8qg, .Time_mn__28SL3, .Time_sc__DCkmI{
+
+.Time_hr__3r8qg, .Time_mn__28SL3, .Time_sc__DCkmI {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
             justify-content: center;
     border-radius: 50%;
 }
-.Time_hr__3r8qg:before{
+
+.Time_hr__3r8qg:before {
     content: '';
     width: 6px;
     height: 90px;
     z-index: 10;
-    border-radius: 7px 7px 0 0 ;
+    border-radius: 7px 7px 0 0;
     background-color: black;
 }
-.Time_mn__28SL3:before{
+
+.Time_mn__28SL3:before {
     content: '';
     width: 4px;
     height: 100px;
     z-index: 11;
-    border-radius: 7px 7px 0 0 ;
+    border-radius: 7px 7px 0 0;
     background-color: black;
 }
-.Time_sc__DCkmI:before{
+
+.Time_sc__DCkmI:before {
     content: '';
     width: 2px;
-    height: 145px;
+    height: 130px;
     z-index: 12;
-    border-radius: 7px 7px 0 0 ;
+    border-radius: 7px 7px 0 0;
     background-color: black;
 }
 
 
-/*# sourceMappingURL=main.c14d21cb.chunk.css.map*/
+/*# sourceMappingURL=main.39952688.chunk.css.map*/
